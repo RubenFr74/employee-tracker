@@ -95,7 +95,7 @@ function viewAllRoles() {
     console.table(res)
     startPrompt()
     })
-  }
+}
 
 //============= View All Employees By Departments ==========================//
 function viewAllDepartments() {
@@ -105,4 +105,18 @@ function viewAllDepartments() {
       console.table(res)
       startPrompt()
     })
-  }
+}
+
+//================= Select Role Quieries Role Title for Add Employee Prompt ===========//
+var roleArr = [];
+function selectRole() {
+  connection.query("SELECT * FROM role", function(err, res) {
+    if (err) throw err
+    for (var i = 0; i < res.length; i++) {
+      roleArr.push(res[i].title);
+    }
+
+  })
+  return roleArr;
+}
+
