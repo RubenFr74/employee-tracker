@@ -1,4 +1,22 @@
 {
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "helps keep track of all employees",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "RubenFr74",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubenFr74/employee-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RubenFr74/employee-tracker/issues"
+  },
+  "homepage": "https://github.com/RubenFr74/employee-tracker#readme",
   "dependencies": {
     "console.table": "^0.10.0",
     "inquirer": "^9.1.4",
